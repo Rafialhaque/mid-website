@@ -56,9 +56,9 @@ function validateForm() {
 
 // Dynamic Product Rendering
 const products = [
-    { name: "Stylish Hoodie", price: 50, img: "Photos/product1.jpg" },
-    { name: "Trendy Sneakers", price: 80, img: "Photos/product2.jpg" },
-    { name: "Denim Jacket", price: 100, img: "Photos/product3.jpg" }
+    { name: "Stylish Hoodie", price: 50, img: "Photos/product1.jpeg" },
+    { name: "Trendy Sneakers", price: 80, img: "Photos/product2.jpeg" },
+    { name: "Denim Jacket", price: 100, img: "Photos/product3.jpeg" }
 ];
 
 function renderProducts() {
