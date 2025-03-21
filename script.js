@@ -72,21 +72,7 @@ function renderProducts() {
                 <h3>${product.name}</h3>
                 <p>$${product.price}</p>
                 <button onclick="addToCart('${product.name}', ${product.price})">Add to Cart</button>
-                <button onclick="removeFromCart('${product.name}')">Remove</button>
             </div>
         `;
     });
-}
-
-function removeFromCart(productName) {
-    let foundIndex = cart.findIndex(item => item.name === productName);
-    
-    if (foundIndex !== -1) {
-        cart[foundIndex].quantity--;
-        if (cart[foundIndex].quantity === 0) {
-            cart.splice(foundIndex, 1);
-        }
-    }
-    
-    updateCart();
 }
